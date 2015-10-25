@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lingzhu Xiang - University of Toronto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+	<link rel="shortcut icon" href="http://www.utoronto.ca/sites/default/files/U-of-T-favicon.png" type="image/png" >
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body style="padding: 0.5em">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 style="font-size: 36pt; font-weight: 700">Lingzhu Xiang</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-9">
+				<p>I am a PhD student at <a href="http://www.utias.utoronto.ca/">University of Toronto Institute for Aerospace Studies</a>, with advisor Professor <a href="http://stars.utias.utoronto.ca/">Jonathan Kelly</a>. My research focuses on visual-inertial navigation, multi-sensor calibration, and robust and active perception.</p>
+				<p>Previously, Master of Science (2015, <a href="http://cs.brown.edu">Department of Computer Science</a>, <a href="http://brown.edu">Brown University</a>, advised by Professor <a href="http://cs.brown.edu/~cjenkins/">Chad Jenkins</a>). Bachelor of Science (2012, <a href="http://www.cis.pku.edu.cn/english_index.htm">Department of Machine Intelligence</a>, <a href="http://english.pku.edu.cn/">Peking University</a>, advised by Professor <a href="http://www.cis.pku.edu.cn/faculty/vision/zhaohj/index-e.htm">Huijing Zhao</a>).</p>
+				<p>I am a proud contributor to open source communities. Your Linux kernel probably has my code. </p>
+				<div style="font-size: 90%">
+				<h3>Publications</h3>
+				<ul>
+					<li>Zhiqiang Sui, <strong>Lingzhu Xiang</strong>, Odest Chadwicke Jenkins, Karthik Desingh. "The Parallel Axiomatic Particle Filter for Goal-directed Sequential Manipulation in Cluttered Scenes." Submitted to <em>the 2016 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2016. [<a>pdf</a>]</li>
+					<li><strong>Lingzhu Xiang</strong>, Zhile Ren, Mengrui Ni, Odest Chadwicke Jenkins. "Robust Graph SLAM in Dynamic Environments with Moving Landmarks." <em>Proceedings of the 2015 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2015. [<a href="papers/iros15xiang.pdf">pdf</a>]</li>
+					<li>Xiangyu Chen, <strong>Lingzhu Xiang</strong>, Huijing Zhao, Hongbin Zha. "An Automatic Steering and Tracking System for Autonomous Vehicles based on EPS." <em>The 8th Joint Workshop on Machine Perception and Robotics (MPR2012)</em>, 2012. [<a href="papers/mpr2012.pdf">pdf</a>]</li>
+				</ul>
+				<h3>Projects</h3>
+				<h4>libfreenect2</h4>
+				<p>I am a main contributor to <a href="https://github.com/OpenKinect/libfreenect2">libfreenect2</a>, the open source drivers for the Kinect for Windows v2 device. I reverse engineered the calibrated depth decoding, and created various hardware acceleration (CUDA, hardware codecs) drivers for Intel, NVIDIA, and <a href="https://github.com/xlz/libfreenect2/wiki/Jetson-TK1-HOWTO">Tegra</a> platforms. I also fix bugs and improve code quality. Find my <a href="https://github.com/OpenKinect/libfreenect2/graphs/contributors">upstream contributions</a>, also check out <a href="https://github.com/xlz/libfreenect2">my personal repo</a>.</p>
+				<h4>rosbeam</h4>
+				<p>I reverse engineered Suitable Technologies' <a href="https://www.suitabletech.com/beam/">Beam</a> telepresence robot. The rosbeam package provides motor control, odometry access, and camera feeds via ROS interfaces. My <a href="">rosbeam</a> repo at GitHub contains the code of the ROS package, and detailed documentation about Beam's internal communication protocols and structures. My Master's degree report (<a href="http://cs.brown.edu/research/pubs/theses/masters/2015/xiang.lingzhu.pdf">PDF</a>) also discussed some details and applications.</p>
+				<h4>PR2 human following demos</h4>
+				<p>I developed human following demos of PR2 for <a href="http://brown-university-robocup-at-home.github.io/">RoboCup 2014</a>. The work was later demonstrated for my advisor's talk at the <a href="http://www.worldsciencefestival.com/programs/cool_jobs/">World Science Festival</a> 2014 (<a href="http://www.youtube.com/watch?v=qooZtjGAYaQ#t=786">video</a>, <a href="https://github.com/xlz/pr2_followme">code</a>).</p>
+				<h4>Self-driving cars</h4>
+				<p>With the <a href="http://www.poss.pku.edu.cn">POSS group</a> at Peking University (2011&ndash;2012), I developed systems integrating motion planning algorithms with constraint of linear curvature and wheel turning controls realizing linear angular velocity, so that the planning is based on practical grounds and the actuation has fine guidance from higher level. Wheel odometry reader, control interfaces, networking API, and visualization were produced along the process.</p>
+				<h4>Linux kernel</h4>
+				<p>At <a href="http://www.redhat.com/">Red Hat</a> (2012&ndash;2013) I tested and patched a bunch of bugs among the UEFI subsystem. I also maintained code for several stable kernel branches. You can find some code or backports signed off by me on <a href="https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?h=linux-3.8.y&amp;qt=grep&amp;q=Signed-off-by%3A+Lingzhu+Xiang">kernel.org</a>, me on <a href="https://bugzilla.redhat.com/buglist.cgi?email1=lxiang%40redhat.com&amp;emailassigned_to1=1&amp;emailcc1=1&amp;emaillongdesc1=1&amp;emailqa_contact1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;query_format=advanced">Bugzilla</a>, or on <a href="http://search.gmane.org/?author=Lingzhu+Xiang&amp;sort=date">mailing lists</a>.</p>
+				<h4>Gallery</h4>
+				<div class="row">
+					<div class="col-md-4">
+						<canvas id="rrtCanvas" width="620" height="620" style="width:100%;height:100%;max-width:496px;" onclick="draw()" ontouchstart="draw()">[This demo requires HTML5 canvas support.]</canvas>
+						<script src="rrt.js"></script>
+						<p>RRT-Connect algorithm (click to start)</p>
+					</div>
+				</div>
+				</div>
+				<hr />
+				<p><small>Powered by <a href="http://getbootstrap.com/">Bootstrap</a> | Last Updated: October 8, 2015</small></p>
+			</div>
+			<div class="col-md-3" style="font-size: 85%">
+				<a href="portrait-large.jpg"><img src="portrait.jpg" alt="My face" class="img-thumbnail"></a>
+				<h4>Resume</h4>
+				<ul class="list-inline"><li><a rel="nofollow" href="Lingzhu_Xiang_Resume.pdf">[PDF]</a></li></ul>
+				<h4>Contact</h4>
+				<dl>
+					<dt>Address</dt>
+					<dd>Institute for Aerospace Studies<br />
+					4925 Dufferin St.<br />
+					Toronto, Ontario M3H 5T6<br />
+					Canada<br />
+					</dd>
+					<dt>Email</dt>
+					<dd>lingzhu at this domain (without www)</dd>
+					<dt>My Links</dt>
+					<dd><ul class="list-inline">
+						<li><a href="https://github.com/xlz">GitHub</a></li>
+						<li><a href="https://www.linkedin.com/in/lingzhuxiang">LinkedIn</a></li>
+						<li><a href="https://twitter.com/txbuf">Twitter</a></li>
+						<li><a href="https://plus.google.com/102577546623203404665">Google+</a></li>
+						<li><a href="https://www.facebook.com/lingzhu.xiang">Facebook</a></li>
+					</ul></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
